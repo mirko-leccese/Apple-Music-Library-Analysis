@@ -19,3 +19,9 @@ fi
 
 # Export library
 music-library-exporter export --music_media_dir "/Macintosh HD/Utenti/mirkoleccese/Musica/Music/File multimediali" --output_path "$path/$filename"
+
+echo "--------------------------------------------------"
+echo "SUCCESS!! $current_extr: $filename correctly written to --> $path" | tee -a success_file.log
+echo "--------------------------------------------------"
+
+
