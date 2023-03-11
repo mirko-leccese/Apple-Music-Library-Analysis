@@ -5,8 +5,8 @@
 
 # Defining main variable
 current_extr=$( date +"%Y-%m-%d %H:%M:%S" )
-current_year_month=$( date +"%Y%m" ) 
-current_year=$( date +"%Y" )
+current_year_month=$( date -v-1d +"%Y%m" ) 
+current_year=$( date -v-1d +"%Y" )
 
 
 filename="music_library_$current_year_month.xml"
@@ -20,8 +20,8 @@ fi
 # Export library
 music-library-exporter export --music_media_dir "/Macintosh HD/Utenti/mirkoleccese/Musica/Music/File multimediali" --output_path "$path/$filename"
 
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------------------------------------------"
 echo "SUCCESS!! $current_extr: $filename correctly written to --> $path" | tee -a success_file.log
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------------------------------------------"
 
 
