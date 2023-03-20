@@ -19,10 +19,12 @@ if [ ! -d "$path" ]; then
 fi
 
 # Export library
-music-library-exporter export --music_media_dir "/Macintosh HD/Utenti/mirkoleccese/Musica/Music/File multimediali" --output_path "$path/$filename"
+/Users/mirkoleccese/bin/music-library-exporter export --music_media_dir "/Macintosh HD/Utenti/mirkoleccese/Musica/Music/File multimediali" --output_path "$path/$filename"
+
+sleep 5
 
 echo "-------------------------------------------------------------------------------------------"
-echo "SUCCESS!! $current_extr: $filename correctly written to --> $path" | tee -a success_file.log | tee extraction.log
+echo "SUCCESS!! $current_extr: $filename correctly written to --> $path" | tee -a extraction.log
 echo "-------------------------------------------------------------------------------------------"
 
 
