@@ -26,7 +26,7 @@ Once you've cloned the repo, follow the instructions provided by kylekingcdn to 
 
 Open the ```export_library.sh``` and modify the absolute paths as necessary.
 
-```{bash}
+```bash
 #!/bin/bash
 
 # This script executes the "music-library-exporter" CLI to export the personal Apple Music Library to a given path. It can be
@@ -58,13 +58,13 @@ echo "--------------------------------------------------------------------------
 ```
 
 Then, your are ready to schedule a Chronjob. Use the following command to open the chrontab:
-```{shell}
+```bash
 crontab -e
 ```
 
 This will open a text editor (```vi``` on Mac) where you can set up your schedule, e.g. to make the ```export_library.sh```run every Monday at 2:30 PM, add the following line to the crontab:
 
-```{bash}
+```bash
 30 2 * * 1 cd /[YOUR_PATH]/Apple-Music-Library-Analysis && ./export_library.sh
 ```
 After adding the line, save and close the crontab file. Your scheduled task is now set up and will run automatically according to the specified schedule.
