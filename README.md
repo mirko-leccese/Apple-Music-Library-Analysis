@@ -69,6 +69,13 @@ This will open a text editor (```vi``` on Mac) where you can set up your schedul
 ```
 After adding the line, save and close the crontab file. Your scheduled task is now set up and will run automatically according to the specified schedule.
 
+Once you have generated your first XML file (maybe with a manual trigger first), it's time to open up our Jupyter Notebook  ```my_apple_music_library_analysis.ipynb``` and dive into the analysis. Let's get started!
+
+## Analysis
+n the Jupyter Notebook, you'll discover a comprehensive analysis of your Apple Music data. You can choose to analyze your Apple Music Library at a specific point in time, or track play counts on a weekly, monthly, or yearly basis - as long as you've exported the XML file. Take a look at the example data visualization below, showcasing the current and previous weekly top 30 charts of the most-streamed songs, complete with information about each song's position on the charts!
+
+![Top 30 Weekly](img/weekly_charts.png)
+
 
 
 
